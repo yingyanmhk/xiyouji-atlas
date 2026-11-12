@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="data:," />
+  <title>西游图志 · 十万八千里</title>
+</head>
+<body>
+  <div id="app"></div>
+
+  <div id="intro">
+    <div class="scroll">
+      <div class="seal">西游</div>
+      <h1>西游图志</h1>
+      <p class="sub">从花果山到灵山，四十五座盆景</p>
+      <p class="lede">一块仙石迸裂，一只石猴见风而生；五百年后，他护着一个和尚，<br />走过十万八千里，八十一难，终究没能翻出如来的手掌。</p>
+      <div class="bar"><i></i></div>
+      <button id="enter" disabled>布 景 中…</button>
+    </div>
+  </div>
+
+  <header id="brand">西游图志<small>十万八千里</small></header>
+  <div id="legend"></div>
+  <nav id="tools">
+    <button id="t-tour" title="导览 (T)">导览</button>
+    <button id="t-nan" title="八十一难 (C)">八十一难</button>
+    <button id="t-night" title="昼夜 (N)">夜</button>
+    <button id="t-sound" title="声音 (M)">声</button>
+  </nav>
+  <div id="help">← → 前后一站　·　T 导览　·　C 八十一难　·　N 昼夜　·　M 声音　·　Esc 回到全图　·　H 隐藏文字</div>
+
+  <div id="caption"><div class="hui"></div><p></p></div>
+  <div id="tourbar"><i></i><span></span><button id="tour-stop">结束导览</button></div>
+
+  <div id="nan">
+    <div class="sheet">
+      <header><h2>九九八十一难</h2><p>第九十九回，观音查看难簿：“佛门中九九归真。圣僧受过八十难，还少一难，不得完成此数。”</p><button id="nan-close">×</button></header>
+      <div class="grid"></div>
+    </div>
+  </div>
+
+  <aside id="panel">
+    <div class="top"><span class="cat"></span><span class="idx"></span></div>
+    <h2 class="name"></h2>
+    <div class="hui"></div>
+    <blockquote class="quote"></blockquote>
+    <p class="note"></p>
+    <div class="nans"></div>
+    <nav><button id="prev">← 上一站</button><button id="home">全图</button><button id="next">下一站 →</button></nav>
+  </aside>
+  <div id="tip"></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,489 @@
+[
+ {
+  "n": 1,
+  "name": "金蝉遭贬",
+  "scene": null,
+  "hui": 100
+ },
+ {
+  "n": 2,
+  "name": "出胎几杀",
+  "scene": null,
+  "hui": 9
+ },
+ {
+  "n": 3,
+  "name": "满月抛江",
+  "scene": null,
+  "hui": 9
+ },
+ {
+  "n": 4,
+  "name": "寻亲报冤",
+  "scene": null,
+  "hui": 9
+ },
+ {
+  "n": 5,
+  "name": "出城逢虎",
+  "scene": null,
+  "hui": 13
+ },
+ {
+  "n": 6,
+  "name": "折从落坑",
+  "scene": null,
+  "hui": 13
+ },
+ {
+  "n": 7,
+  "name": "双叉岭上",
+  "scene": null,
+  "hui": 13
+ },
+ {
+  "n": 8,
+  "name": "两界山头",
+  "scene": "wuxingshan",
+  "hui": 14
+ },
+ {
+  "n": 9,
+  "name": "陡涧换马",
+  "scene": "yingchoujian",
+  "hui": 15
+ },
+ {
+  "n": 10,
+  "name": "夜被火烧",
+  "scene": "guanyinyuan",
+  "hui": 16
+ },
+ {
+  "n": 11,
+  "name": "失却袈裟",
+  "scene": "guanyinyuan",
+  "hui": 16
+ },
+ {
+  "n": 12,
+  "name": "收降八戒",
+  "scene": "gaolaozhuang",
+  "hui": 19
+ },
+ {
+  "n": 13,
+  "name": "黄风怪阻",
+  "scene": "huangfengling",
+  "hui": 20
+ },
+ {
+  "n": 14,
+  "name": "请求灵吉",
+  "scene": "huangfengling",
+  "hui": 21
+ },
+ {
+  "n": 15,
+  "name": "流沙难渡",
+  "scene": "liushahe",
+  "hui": 22
+ },
+ {
+  "n": 16,
+  "name": "收得沙僧",
+  "scene": "liushahe",
+  "hui": 22
+ },
+ {
+  "n": 17,
+  "name": "四圣显化",
+  "scene": "sisheng",
+  "hui": 23
+ },
+ {
+  "n": 18,
+  "name": "五庄观中",
+  "scene": "wuzhuangguan",
+  "hui": 24
+ },
+ {
+  "n": 19,
+  "name": "难活人参",
+  "scene": "wuzhuangguan",
+  "hui": 26
+ },
+ {
+  "n": 20,
+  "name": "贬退心猿",
+  "scene": "baihuling",
+  "hui": 27
+ },
+ {
+  "n": 21,
+  "name": "黑松林失散",
+  "scene": "baoxiangguo",
+  "hui": 28
+ },
+ {
+  "n": 22,
+  "name": "宝象国捎书",
+  "scene": "baoxiangguo",
+  "hui": 29
+ },
+ {
+  "n": 23,
+  "name": "金銮殿变虎",
+  "scene": "baoxiangguo",
+  "hui": 30
+ },
+ {
+  "n": 24,
+  "name": "平顶山逢魔",
+  "scene": "pingdingshan",
+  "hui": 32
+ },
+ {
+  "n": 25,
+  "name": "莲花洞高悬",
+  "scene": "pingdingshan",
+  "hui": 33
+ },
+ {
+  "n": 26,
+  "name": "乌鸡国救主",
+  "scene": "wujiguo",
+  "hui": 39
+ },
+ {
+  "n": 27,
+  "name": "被魔化身",
+  "scene": "wujiguo",
+  "hui": 39
+ },
+ {
+  "n": 28,
+  "name": "号山逢怪",
+  "scene": "huoyundong",
+  "hui": 40
+ },
+ {
+  "n": 29,
+  "name": "风摄圣僧",
+  "scene": "huoyundong",
+  "hui": 40
+ },
+ {
+  "n": 30,
+  "name": "心猿遭害",
+  "scene": "huoyundong",
+  "hui": 41
+ },
+ {
+  "n": 31,
+  "name": "请圣降妖",
+  "scene": "huoyundong",
+  "hui": 42
+ },
+ {
+  "n": 32,
+  "name": "黑河沉没",
+  "scene": "heishuihe",
+  "hui": 43
+ },
+ {
+  "n": 33,
+  "name": "搬运车迟",
+  "scene": "chechiguo",
+  "hui": 44
+ },
+ {
+  "n": 34,
+  "name": "大赌输赢",
+  "scene": "chechiguo",
+  "hui": 46
+ },
+ {
+  "n": 35,
+  "name": "祛道兴僧",
+  "scene": "chechiguo",
+  "hui": 46
+ },
+ {
+  "n": 36,
+  "name": "路逢大水",
+  "scene": "tongtianhe",
+  "hui": 47
+ },
+ {
+  "n": 37,
+  "name": "身落天河",
+  "scene": "tongtianhe",
+  "hui": 48
+ },
+ {
+  "n": 38,
+  "name": "鱼篮现身",
+  "scene": "tongtianhe",
+  "hui": 49
+ },
+ {
+  "n": 39,
+  "name": "山遇怪",
+  "scene": "jindoudong",
+  "hui": 50
+ },
+ {
+  "n": 40,
+  "name": "普天神难伏",
+  "scene": "jindoudong",
+  "hui": 51
+ },
+ {
+  "n": 41,
+  "name": "问佛根源",
+  "scene": "jindoudong",
+  "hui": 52
+ },
+ {
+  "n": 42,
+  "name": "吃水遭毒",
+  "scene": "nverguo",
+  "hui": 53
+ },
+ {
+  "n": 43,
+  "name": "西梁国留婚",
+  "scene": "nverguo",
+  "hui": 54
+ },
+ {
+  "n": 44,
+  "name": "琵琶洞受苦",
+  "scene": "pipadong",
+  "hui": 55
+ },
+ {
+  "n": 45,
+  "name": "再贬心猿",
+  "scene": "zhenjia",
+  "hui": 56
+ },
+ {
+  "n": 46,
+  "name": "难辨猕猴",
+  "scene": "zhenjia",
+  "hui": 58
+ },
+ {
+  "n": 47,
+  "name": "路阻火焰山",
+  "scene": "huoyanshan",
+  "hui": 59
+ },
+ {
+  "n": 48,
+  "name": "求取芭蕉扇",
+  "scene": "huoyanshan",
+  "hui": 59
+ },
+ {
+  "n": 49,
+  "name": "收缚魔王",
+  "scene": "huoyanshan",
+  "hui": 61
+ },
+ {
+  "n": 50,
+  "name": "赛城扫塔",
+  "scene": "jisaiguo",
+  "hui": 62
+ },
+ {
+  "n": 51,
+  "name": "取宝救僧",
+  "scene": "jisaiguo",
+  "hui": 63
+ },
+ {
+  "n": 52,
+  "name": "棘林吟咏",
+  "scene": "jingjiling",
+  "hui": 64
+ },
+ {
+  "n": 53,
+  "name": "小雷音遇难",
+  "scene": "xiaoleiyin",
+  "hui": 65
+ },
+ {
+  "n": 54,
+  "name": "诸天神遭困",
+  "scene": "xiaoleiyin",
+  "hui": 66
+ },
+ {
+  "n": 55,
+  "name": "稀柿同秽阻",
+  "scene": "xishitong",
+  "hui": 67
+ },
+ {
+  "n": 56,
+  "name": "朱紫国行医",
+  "scene": "zhuziguo",
+  "hui": 69
+ },
+ {
+  "n": 57,
+  "name": "拯救疲癃",
+  "scene": "zhuziguo",
+  "hui": 69
+ },
+ {
+  "n": 58,
+  "name": "降妖取后",
+  "scene": "zhuziguo",
+  "hui": 71
+ },
+ {
+  "n": 59,
+  "name": "七情迷没",
+  "scene": "pansidong",
+  "hui": 72
+ },
+ {
+  "n": 60,
+  "name": "多目遭伤",
+  "scene": "pansidong",
+  "hui": 73
+ },
+ {
+  "n": 61,
+  "name": "路阻狮驼",
+  "scene": "shituoling",
+  "hui": 74
+ },
+ {
+  "n": 62,
+  "name": "怪分三色",
+  "scene": "shituoling",
+  "hui": 75
+ },
+ {
+  "n": 63,
+  "name": "城里遇灾",
+  "scene": "shituoling",
+  "hui": 77
+ },
+ {
+  "n": 64,
+  "name": "请佛收魔",
+  "scene": "shituoling",
+  "hui": 77
+ },
+ {
+  "n": 65,
+  "name": "比丘救子",
+  "scene": "biqiuguo",
+  "hui": 78
+ },
+ {
+  "n": 66,
+  "name": "辨认真邪",
+  "scene": "biqiuguo",
+  "hui": 79
+ },
+ {
+  "n": 67,
+  "name": "松林救怪",
+  "scene": "wudidong",
+  "hui": 80
+ },
+ {
+  "n": 68,
+  "name": "僧房卧病",
+  "scene": "wudidong",
+  "hui": 81
+ },
+ {
+  "n": 69,
+  "name": "无底洞遭困",
+  "scene": "wudidong",
+  "hui": 82
+ },
+ {
+  "n": 70,
+  "name": "灭法国难行",
+  "scene": "miefaguo",
+  "hui": 84
+ },
+ {
+  "n": 71,
+  "name": "隐雾山遇魔",
+  "scene": "yinwushan",
+  "hui": 85
+ },
+ {
+  "n": 72,
+  "name": "凤仙郡求雨",
+  "scene": "fengxianjun",
+  "hui": 87
+ },
+ {
+  "n": 73,
+  "name": "失落兵器",
+  "scene": "yuhuazhou",
+  "hui": 88
+ },
+ {
+  "n": 74,
+  "name": "会庆钉钯",
+  "scene": "yuhuazhou",
+  "hui": 89
+ },
+ {
+  "n": 75,
+  "name": "竹节山遭难",
+  "scene": "yuhuazhou",
+  "hui": 90
+ },
+ {
+  "n": 76,
+  "name": "玄英洞受苦",
+  "scene": "jinpingfu",
+  "hui": 91
+ },
+ {
+  "n": 77,
+  "name": "赶捉犀牛",
+  "scene": "jinpingfu",
+  "hui": 92
+ },
+ {
+  "n": 78,
+  "name": "天竺招婚",
+  "scene": "tianzhuguo",
+  "hui": 93
+ },
+ {
+  "n": 79,
+  "name": "铜台府监禁",
+  "scene": "tongtaifu",
+  "hui": 97
+ },
+ {
+  "n": 80,
+  "name": "凌云渡脱胎",
+  "scene": "lingshan",
+  "hui": 98
+ },
+ {
+  "n": 81,
+  "name": "通天河遇鼋湿经",
+  "scene": "tongtianhe",
+  "hui": 99,
+  "note": "第九十九回难簿只列到第八十难；第八十一难（通天河老鼋落水、湿经）书中未命名，此名为后拟。"
+ }
+]
