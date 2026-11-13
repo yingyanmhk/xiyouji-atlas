@@ -6,6 +6,8 @@ world's end. Art direction: 青绿山水 × 盆景 — mineral blues and greens,
 hierarchical scale (主大从小). Technique after
 [stared/invisible-cities-opus-5.5](https://github.com/stared/invisible-cities-opus-5.5).
 
+**Live:** <https://yingyanmhk.github.io/xiyouji-atlas/>
+
 ```sh
 pnpm install
 pnpm dev        # http://127.0.0.1:5199
