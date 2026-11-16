@@ -21,7 +21,10 @@ const params = new URLSearchParams(location.search);
 const SOLO = params.get('solo');
 
 const renderer = new THREE.WebGLRenderer({ antialias: false, powerPreference: 'high-performance', preserveDrawingBuffer: !!SOLO });
-renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+// Retina at 2× quadruples the pixels every full-screen pass touches; 1.5 is visually close under the
+// tilt-shift/grain. ?pr=2 restores the old cap. Solo renders keep 2 for crisp verification shots.
+const PR_CAP = +(params.get('pr') ?? (SOLO ? 2 : 1.5));
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, PR_CAP));
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 1.05;
@@ -32,7 +35,7 @@ document.getElementById('app').appendChild(renderer.domElement);
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 0.5, 9000);
 const stage = createStage(scene);
-const post = createPost(renderer, scene, camera, { ao: params.get('ao') !== '0' });
+const post = createPost(renderer, scene, camera, { ao: params.get('ao') !== '0', samples: +(params.get('msaa') ?? 2) });
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.dampingFactor = 0.08;
@@ -261,7 +264,18 @@ async function app() {
   /* loop */
   const clock = makeClock();
   const frustum = new THREE.Frustum(), pv = new THREE.Matrix4();
-  const loop = () => {
+  // idle throttle: when nothing moves the camera (no drag/zoom/damping, flight, tour or day↔night fade) for
+  // IDLE_AFTER ms, render at IDLE_FPS instead of the display rate. ?idlefps=0 disables the throttle.
+  const IDLE_FPS = +(params.get('idlefps') ?? 30), IDLE_AFTER = 1500;
+  let lastActive = performance.now(), lastFrame = 0;
+  const wake = () => { lastActive = performance.now(); };
+  controls.addEventListener('start', wake);
+  controls.addEventListener('change', wake);
+  const loop = (now = performance.now()) => {
+    requestAnimationFrame(loop);
+    const idle = !flight && !tour && Math.abs(env.night - nightTarget) < 0.001 && now - lastActive > IDLE_AFTER;
+    if (idle && IDLE_FPS > 0 && now - lastFrame < 1000 / IDLE_FPS - 2) return;
+    lastFrame = now;
     const dt = Math.min(clock.getDelta(), 0.05), t = clock.elapsedTime;
     stepNight(dt);
     if (flight) {
@@ -293,7 +307,6 @@ async function app() {
     }
     post.composer.render();
     fpsN++; if (t - fpsT > 1) { window.__fps = fpsN / (t - fpsT); fpsN = 0; fpsT = t; }
-    requestAnimationFrame(loop);
   };
   let fpsN = 0, fpsT = 0, frameN = 0;
   loop();

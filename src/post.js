@@ -62,9 +62,10 @@ const GradeShader = {
     }`,
 };
 
-export function createPost(renderer, scene, camera, { ao = true } = {}) {
+export function createPost(renderer, scene, camera, { ao = true, samples = 2 } = {}) {
   const size = renderer.getDrawingBufferSize(new THREE.Vector2());
-  const rt = new THREE.WebGLRenderTarget(size.x, size.y, { type: THREE.HalfFloatType, samples: 4 });
+  // the composer clones this target for its ping-pong buffer, so MSAA cost is paid twice per pass
+  const rt = new THREE.WebGLRenderTarget(size.x, size.y, { type: THREE.HalfFloatType, samples });
   const composer = new EffectComposer(renderer, rt);
   composer.addPass(new RenderPass(scene, camera));
   let aoPass = null;
