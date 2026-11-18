@@ -128,7 +128,7 @@ export function fivePillars(scene, { z = -330, spread = 34 } = {}) {
     b.lathe([[0, 0], [7.5, 0], [7, h * 0.3], [6.4, h * 0.8], [5.2, h * 0.97], [3.2, h], [0, h + 1]], { x, z: zz, ry: i, rz: (i - 2) * 0.04, color: '#d9a28f', mat: M.smooth, seg: 28 });
   }
   const r = rng(55);
-  for (let i = 0; i < 18; i++) cloud(b, { x: r.range(-110, 110), y: r.range(2, 12), z: z + r.range(-10, 30), s: r.range(5, 9), ry: r.range(-0.3, 0.3), rand: r, color: '#f4efe4' });
+  for (let i = 0; i < 18; i++) cloud(b, { x: r.range(-110, 110), y: r.range(2, 12), z: z + r.range(-10, 30), s: r.range(5, 9), ry: r.range(-0.3, 0.3), rand: r, color: '#f4efe4', curl: false }); // curl off: the 270° tail torus reads as a jarring ring at this scale
   const g = b.build({ shadows: false });
   // a breath of blue vapour above
   const vapour = new THREE.Mesh(new THREE.SphereGeometry(1, 24, 12), new THREE.MeshBasicMaterial({ color: '#9fc0c4', transparent: true, opacity: 0.35, depthWrite: false }));
